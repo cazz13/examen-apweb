@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <link rel="stylesheet" href="./snippets/topNavResponsive_files/font-awesome.css">
+    <link rel="shortcut icon" href="./images/" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+
+< id="container">
+    <nav class="topnav" id="myTopnav">
+        <a href="#hero">HOME</a>
+        <a href="#introduction">INTRODUCTION</a>
+        <a href="#gallery">PROTOTYPES</a>
+        <a href="">FUTURE</a>
+        <a href="#contacto">CREDITS</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+          </a>
+    </nav>
+    <section id="hero">
+        <h1>QUANTIUM <br> COMPUTING</h1>
+    </section>
+    <section id="introduction">
+        <h2>INTRODUCTION</h2>
+        <img src="./images/quantum-computing.jpg" id="imgintroduccion">
+        <p>Quantum computing is a modern way of computing that is based on the science of quantum mechanics 
+            and its unbelievable phenomena.</p> 
+            
+            <p>It is a beautiful combination of physics, mathematics, computer 
+            science and information theory.</p> 
+            
+            <p>It provides high computational power, less energy consumption and exponential 
+            speed over classical computers by controlling the behavior of small physical objects 
+            i.e. microscopic particles like atoms, electrons, photons, etc. Here, we present an introduction 
+            to the fundamental concepts and some ideas of quantum computing. </p>
+    </section>
+    <section id="gallery">
+        <div id="texto">
+        <h2>PROTOTYPES</h2>
+        <p>Quantum computing is heating up, as a growing number of entities race to benchmark, stabilize, and ultimately commercialize this technology.</p>
+
+        <p>Here you are some of the most outstanding prototypes:</p>
+        </div>
+        <div id="uno" class="colum">
+          <h3>IBM's <br>
+              Quiskit</h3>
+              <img src="./images/quiskit.jpg" alt="quiskit">
+              <button>Learn more</button>
+        </div>
+
+        <div id="dos" class="colum">
+            <h3>Google's <br>
+                Sycamore
+            </h3>
+            <img src="./images/sycamore.jpg" alt="sycamore">
+            <button>Learn more</button>
+        </div>
+
+        <div id="tres" class="colum">
+            <h3>USTC's <br>
+                Zuchongzhi
+            </h3>
+            <img src="./images/Zuchongzhi.jpeg" alt="zuchongzhi">
+            <button>Learn more</button>
+        </div>
+    
+    </section>
+<div class="finfloat"></div>
+    <footer>
+        <div id="contacto">
+            <p>Examen de HTML/CSS/JS - Curso 2021/22</p>
+            <p>Autor: Alvaro Ramos Granado</p>
+            <p>IES Campanillas - Málaga</p>
+        </div>
+    </footer>
+
+
+</div>
+
+</body>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</html>
